@@ -1,0 +1,14 @@
+apiVersion: cert-manager.io/v1alpha2
+kind: Certificate
+metadata:
+  name: $CI_ENVIRONMENT_SLUG
+  namespace: $KUBE_NAMESPACE
+  labels:
+    app: $CI_ENVIRONMENT_SLUG
+spec:
+  secretName: $CI_ENVIRONMENT_SLUG
+  dnsNames:
+  - "$CI_ENVIRONMENT_HOSTNAME"
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer

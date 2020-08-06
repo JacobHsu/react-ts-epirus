@@ -1,0 +1,14 @@
+{
+  "review-www": {
+    "currency": "RNK",
+    "smallCurrency": "eby"
+  },
+  "clearmatics-www": {
+    "logo": "/static/clearmatics/logo.svg"
+  },
+  "eximchain-www": {
+    "currency": "EXC",
+    "smallCurrency": "wei",
+    "logo": "/static/eximchain/logo.svg"
+  }
+}
