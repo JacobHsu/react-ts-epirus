@@ -37,3 +37,33 @@ timestampISO gt 2019-07-30T12:20:24Z and timestampISO lt timestampISO lt 2019-07
 or
 `timestampISO gt 2019-07-30T12:20:24Z and timestampISO lt 2019-07-30T12:20:39Z`
 eg/ `https://review.api.explorer.epirus.web3labs.com/transactions?sort=timestampISO&size=25&direction=DESC&page=1&timestampISO%20gt%202019-07-30T12:20:24Z%20and%20timestampISO%20lt%20timestampISO%20lt%202019-07-30T12:20:39Z`
+
+
+## SiderBar
+
+src\data\data-side-content.ts
+
+```js
+export const ITEMS_MAIN: IMenuItem[] = [
+    {
+    name: 'Blocks',
+    iconType: EIconType.Blocks,
+  },
+  // {
+  //   name: 'Network',
+  //   iconType: EIconType.Network,
+  // },
+```
+
+## NavBar
+
+src\components\app-shell\header-desktop\right-content.tsx
+
+```js
+ <div className="HeaderDesktopRightContent">
+        <div className="search-bar">
+          <SearchBar isHeader {...searchBarProps} />
+        </div>
+        {/* <AccountInfo userProfile={userProfile} /> */}
+      </div>
+```
