@@ -67,3 +67,23 @@ src\components\app-shell\header-desktop\right-content.tsx
         {/* <AccountInfo userProfile={userProfile} /> */}
       </div>
 ```
+
+## website setting
+
+react-ts-epirus\src\theming\index.ts
+
+```js
+const DEFAULT: IThemeConfig = {
+  currency: 'ETH',
+  smallCurrency: 'Wei',
+  windowTitle: 'Epirus | Blockchain Explorer',
+  companyLink: 'https://w3l.cc/about',
+  supportEmail: 'support@web3labs.com',
+  logo: '/static/logo.svg',
+  logoFavicon: '/static/logo-favicon.jpg',
+  favicon: {
+    '32': '/static/favicon-32x32.png',
+    '16': '/static/favicon-16x16.png',
+  },
+};
+```
