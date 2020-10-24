@@ -87,3 +87,20 @@ const DEFAULT: IThemeConfig = {
   },
 };
 ```
+
+## transactions
+
+http://localhost:3000/transactions/
+
+[開發智能合約 - 什麼是 Gas](https://ithelp.ithome.com.tw/m/articles/10201207)
+
+src\components\pages\transactions\transaction-details\data.tsx
+
+```js
+    [
+      {
+        name: 'Transaction Fee',
+        value: `${formatWithCommas(cumulativeGasUsed, 0, 0)} ${themed('smallCurrency')}`,
+      },
+    ],
+```

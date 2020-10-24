@@ -118,7 +118,11 @@ export function transactionOverviewConfig(data, isDesktop: boolean): IOverviewCo
       [
         {
           name: 'Transaction Fee',
-          value: `${formatWithCommas(cumulativeGasUsed, 0, 0)} ${themed('smallCurrency')}`,
+          value: `${formatWithCommas(gasUsed * gasPrice)} ${formatWithCommas(
+            cumulativeGasUsed,
+            0,
+            0,
+          )} ${themed('smallCurrency')}`,
         },
       ],
       [
