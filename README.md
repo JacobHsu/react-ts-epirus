@@ -104,3 +104,28 @@ src\components\pages\transactions\transaction-details\data.tsx
       },
     ],
 ```
+
+## Account Details
+
+http://localhost:3000/accounts/0xd..
+
+src\components\pages\accounts\account-details\data.tsx
+
+```js
+    additionalDetails: [
+      [
+        {
+          name: 'Balance',
+          value: (
+            <ToolTipContentInline
+              textStyle={{ fontSize: 12 }}
+              contentToCopy={`${formatWithCommas(balance, 0, 0)} ${themed('smallCurrency')}`}
+            >
+              {`${formatWithCommas(ethBalance)} ${currency}`}
+            </ToolTipContentInline>
+          ),
+        },
+      ],
+    ],
+```
+
