@@ -59,6 +59,8 @@ TABS
 
 api: https://www.doamin/api/contracts/0x0191d0d5147534611A625baede45b36137CeB9f6/transactions
 
+
+
 ```js
 const transactionsConfig = {
     apiLink: '/contracts/[detailsHash]/[tab]', // https://www.ipublic.io/api/contracts/0x0191d0d5147534611A625baede45b36137CeB9f6/transactions
